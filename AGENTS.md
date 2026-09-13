@@ -1,11 +1,9 @@
 # Supacharger Core contributor instructions
 
-This optional repository supplies contributor policies. Follow the host's root `AGENTS.md`, `.agents/supacharger/guidance.md` and `.agents/project/AGENTS.md`; use `docs/agents/` for Supacharger technical conventions. This file does not replace project instructions or duplicate the technical references.
+Develop Supacharger Core for distribution to other developers; architecture and committed files must support reuse without depending on a contributor's local environment, private resources or personal tooling.
 
-Before an authorised Core commit, or when the human asks to update the Core changelog (including "do the changelog", "release notes" or "version history"), read `core-changelog-policy.md` beside this file and the host's `.agents/skills/changelog/SKILL.md`. If the skill is missing, install the public `general/changelog` skill with `supacharger skills install general/changelog` before continuing.
+Follow the host's instruction entry point. For Core changes and work on the Docusaurus site, read [docusaurus-documentation-policy.md](docusaurus-documentation-policy.md). For an authorised Core commit or changelog request, read [core-changelog-policy.md](core-changelog-policy.md) and the host's `.agents/skills/changelog/SKILL.md`. If the skill is absent, install `general/changelog` with the CLI.
 
-A request to commit Core changes authorises the accompanying Core changelog review; do not ask for that permission again. An application commit does not authorise Core changelog edits. A changelog request does not authorise committing or publishing.
+Installed skills and their installation records are local tooling in Core; do not commit them to Core. Applications choose their own skills and may commit them with their generated installation records. Maintain reusable skill source in its own repository.
 
-Keep the changelog review and its checkpoint in the same commit as the reviewed changes. Preserve unrelated work and do not mark excluded changes as covered. Commit changes in this guidance repository separately before recording its submodule revision in the host. Never imply a local commit has been published.
-
-This optional guidance is not CLI-managed. Update it deliberately through Git. Instruction-routing rules belong in the host's `.agents/supacharger/guidance.md`.
+This contributor repository is a separate Git submodule. Commit and publish its changes before recording a new revision in the host; ordinary Core updates do not update it.
