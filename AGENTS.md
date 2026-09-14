@@ -6,4 +6,8 @@ Follow the host's instruction entry point. For Core changes and work on the Docu
 
 Installed skills and their installation records are local tooling in Core; do not commit them to Core. Applications choose their own skills and may commit them with their generated installation records. Maintain reusable skill source in its own repository.
 
+## Icon conventions
+
+Use `lucide-react` icons for shared concepts in Supacharger application interfaces and documentation. Use `<Brain />` for AI agents, agent setup, agentic development and AI-assisted actions. Use `<Wrench />` for manual setup, manual development and configuration work. Keep the same concept-to-icon mapping across navigation, cards and actions. Retain visible text labels; mark decorative icons with `aria-hidden="true"`.
+
 This contributor repository is a separate Git submodule. Commit and publish its changes before recording a new revision in the host; ordinary Core updates do not update it.
