@@ -13,4 +13,4 @@ If `.gitmodules` already registers it, use `git submodule update --init .agents/
 
 See [Contributing to Supacharger](https://supacharger.dev/docs/contributing) and [Agent guidance](https://supacharger.dev/docs/agents). The general changelog skill is maintained separately in [Glowplug skills](https://github.com/glowplug-studio/glowplug-skills/tree/main/general/changelog).
 
-Contributor policies: [Docusaurus documentation](docusaurus-documentation-policy.md) and [Core changelog](core-changelog-policy.md). Installed skills remain local to a Core checkout; maintain their reusable source in the public skills repository.
+Start with [AGENTS.md](AGENTS.md) and its [contributor rules](docs/agents/project.md). Contributor policies: [Docusaurus documentation](docusaurus-documentation-policy.md) and [Core changelog](core-changelog-policy.md). Installed skills remain local to a Core checkout; maintain their reusable source in the public skills repository.
